@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDNS -->
+     <!-- Bootstrap-css-cdn -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!-- Bootstrap-css-cdn -->
+     <!-- Font-Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Font-awesome -->
+     <!-- Fade_aos-css -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Fade_aos-css -->
+    <!-- ✔ Guaranteed Working Bootstrap Icons CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- CDNS -->
+    <!-- CSS-LINKS -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="service.css">
+      <link rel="stylesheet" href="resume.css">
+      <link rel="stylesheet" href="pricing.css">
+      <link rel="stylesheet" href="contacts.css">
+      <link rel="stylesheet" href="footer.css">
+    <!-- CSS-LINKS -->
+    <!-- Email.Js-CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "cA8u22D9--APh9-2h",
+      });
+   })();
+</script>
+    <!-- Email.Js.CDN -->
+    <!-- CDNS -->
+    <title>Service</title>
+    <style>
+
+    /* Service-Page */
+      .service-details-container{
+        margin-top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #service-nav-pages-home{
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+      }
+      #service-nav-services-service{
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        margin-left: 5px;
+      }
+
+      .service-img-category{
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+        border-radius: 12px;
+      }
+
+      .Service-Category{
+        width: 100%;
+        height: 410px;
+        border: 1px solid #141414;
+        border-radius: 12px;
+        background-color: #1a1919;
+        transition: 0.3s ease;
+        box-shadow: 0 0 0 rgba(0,0,0,0); /* default no shadow */
+      }
+      
+      .service-category{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .service-category-dot{
+         color: red;
+         font-size: 33px;
+         animation: service-dot-blink 1.5s infinite;
+      }
+      @keyframes service-dot-blink {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+      }
+
+      #a-text{
+          text-decoration: none;
+      }
+
+      
+    /* Service-Page */
+
+    </style>
+
+</head>
+<body>
+    
+<section>
+    <!-- Container-Section -->
+     <!-- Navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg" id="navbar">
+  <a class="navbar-brand" href="index.html">
+    <img id="my-logo" src="my-logo-usman-dev.jpeg" alt="" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <!-- Toggle -->
+<label class="hamburger" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+  <input type="checkbox" />
+  <svg viewBox="0 0 32 32">
+    <path
+      d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+      class="line line-top-bottom"
+    ></path>
+    <path d="M7 16 27 16" class="line"></path>
+  </svg>
+</label>
+
+      <!-- Toggle -->
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-danger" style="background-color: rgba(198, 66, 66, 0.217); border-radius: 4px; height: 40px;" id="a-tag-line" href="index.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="about.html" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="service.css" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="#" data-aos="fade-dowm" data-aos-easing="linear" data-aos-duration="800">Resume</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="#" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Projects</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="#" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Contact</a>
+      </li>
+    </ul>
+    <div class="d-flex">  
+      <!-- Navbar-Icons -->
+     <!-- linkedin-icon -->
+       <button id="nav-icons" class="mr-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://www.linkedin.com/in/m-usman-chauhan/')">
+       <i class="fa-brands fa-linkedin-in" id="linkedin-icon"></i>
+       </button>
+
+        <!-- linkedin-icon -->
+        <!-- github-icon -->
+        <button id="nav-icons" class="mr-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://github.com/MUsmanandDeveloper19')">
+       <i class="fa-brands fa-github" id="github-icon"></i> 
+       </button>
+        <!-- github-icon -->
+        <!-- whatsapp-icon -->
+          <button id="nav-icons" class="mr-2"
+          data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+          onclick="window.open('https://wa.me/923061664480?text=Hello%20I%20saw%20your%20portfolio!', '_blank')">
+         <i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i>
+         </button>
+
+        <!-- whatsapp-icon -->
+        <!-- youtube-icon -->
+        <button id="nav-icons" class="mr-2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://www.upwork.com/freelancers/~01b28b7c8bcfa1d2cb')">
+          <i class="fa-brands fa-upwork" id="youtube-icon"></i>
+        </button>
+        
+      <!-- youtube-icon -->
+      <!-- Navbar-icons -->
+    </div>
+  </div>
+</nav>
+</section>
+<!-- Navbar -->
+
+<!-- Container-Section -->
+<section id="Service">
+  <!-- Serivce-Container -->
+    <div class="container">
+        <div class="text-center">
+            <h1 class="text-white service-details-container">Service Details</h1>
+        </div>
+
+       <!-- Service-nav -->
+         <div class="d-flex mt-5 mx-auto justify-content-center ">
+           <!-- Home-Page -->
+            <a href="index.html" style="text-decoration: none;">
+                <h6 id="service-nav-pages-home">Home ></h6>
+            </a>
+           <!-- Service-Page -->
+            <a href="index.html" style="text-decoration: none;">
+                <h6 id="service-nav-services-service">Services Details</h6>
+            </a>
+           <!-- Service-Page -->
+         </div>
+       <!-- Service-nav -->
+
+        <!-- Page-tittle -->
+        <h5 class="text-white ml-2" style="position: relative; top: 50px; font-family: Arial, Helvetica, sans-serif;">Customer Web Solutions</h5>
+        <!-- Page-tittle -->
+
+       <div class="row mt-5">
+        <div class="col-lg-8 col-md-4 col-sm-12 mt-3">
+            <img class="service-img-category" src="service-detials-thumnail-wrap.png" alt="">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+            <!-- Service Category -->
+              <div class="Service-Category">
+                <div class="container mt-3 ml-2">
+                    <!-- Service Category -->
+                    <h4 class="text-white service-category">Service Category <b class="service-category-dot">.</b> </h4>
+                    <!-- Service Category -->
+
+                    <!-- Service-list -->
+                    
+                    <!-- Frontend-development -->
+                    <div class="sercice-list mt-3">
+                     <a href="service-category-frontend.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white">Frontend Development</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                     </a>
+                    </div>
+                    <!-- Frontend-development -->
+
+                   <!-- MernStack-development -->
+                    <div class="sercice-list mt-3">
+                     <a href="service-category-mern-stack.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white">Mern Stack Development</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                     </a>
+                    </div>
+                    <!-- MernStack-development -->
+
+                    <!-- Admin-dashboard-develpement -->
+                    <div class="sercice-list mt-3">
+                     <a href="service-category-admin-dashboard.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white">Admin Dashboard</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                     </a>
+                    </div>
+                    <!-- Admin-dashboard-develpement -->
+
+                    <!-- AI-powered-intergration -->
+                     <div class="sercice-list mt-3">
+                     <a href="service-category-AI-powered.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white">AI-Powered Intregations</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                     </a>
+                    </div>
+                    <!-- AI-powered-intergration -->
+
+                     <!-- Customer Web Solutions -->
+                    <div class="sercice-list mt-3">
+                      <a href="service-category-Customer-web-solution.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white">Customer Web Solutions</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                      </a>
+                    </div>
+                    <!-- Customer Web Solutions -->
+
+                     <!-- API Dev Integration -->
+                     <div class="sercice-list mt-3">
+                      <a href="service-category-Api-dev-integrations.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white">API Dev Integration</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                      </a>
+                    </div>
+                    <!-- API Dev Integration -->
+
+                    <!-- Website Redesign -->
+                    <div class="sercice-list mt-3">
+                      <a href="service-category-website-redesign.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white">Website Redesign</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                      </a>
+                    </div>
+                    <!-- Website Redesign -->
+
+                    <!-- Performance Optimization -->
+                     <div class="sercice-list mt-3">
+                      <a href="service-category-performance-optimization.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white">Performance Optimization</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                      </a>
+                    </div>
+                    <!-- Performance Optimization -->
+
+
+                    <!-- Service-list -->
+
+                </div>
+              </div>
+            <!-- Service Category -->
+        </div>
+
+       </div>
+
+    </div>
+  <!-- Serivce-Container -->
+</section>
+
+
+
+
+
+ <footer class="mt-5">
+  <div class="container mt-5">
+    <div class="row mt-3" id="footer-child-parent">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <h1 class="text-white" id="your-vision">Your Vision, My Code — Let’s Create Great .</h1>
+           <!-- Email-Icon -->
+             <section>
+               <div class="d-flex mt-5">
+              <div id="footer-email-icon-parent">
+                <i class="fa-solid fa-envelope text-white" id="footer-email-icon"></i>
+              </div>
+                <div class="footer-email-content ml-3">
+                  <h5 class="footer-email-content">Email:</h5>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                  <a id="smart-email-link" href="#" role="button" style="text-decoration: none;" class="text-white">musmanchauhan191@gmail.com</a>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                </div>
+            </div>
+             </section>
+           <!-- Email-icon -->
+           <!-- Location-icon -->
+            <section>
+               <div class="d-flex mt-3">
+              <div id="footer-Location-icon-parent">
+                <i class="fa-solid fa-location-dot text-white" id="footer-Location-icon"></i>
+              </div>
+                <div class="footer-Location-content ml-3">
+                  <h5 class="footer-Location-content">Email:</h5>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                  <a id="smart-Location-link" href="#" role="button" style="text-decoration: none;" class="text-white">Lahore, Pakistan</a>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                </div>
+            </div>
+             </section>
+           <!-- Location-icon -->
+
+           <!-- Phone-icon -->
+            <section>
+               <div class="d-flex mt-3">
+              <div id="footer-Phone-icon-parent">
+                <i class="fa-solid fa-phone text-white" id="footer-Phone-icon"></i>
+              </div>
+                <div class="footer-Phone-content ml-3">
+                  <h5 class="footer-Phone-content">Contact:</h5>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                  <a id="smart-Phone-link" href="#" role="button" style="text-decoration: none;" class="text-white">+92 306 1664480</a>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                </div>
+            </div>
+             </section>
+           <!-- Phone-icon -->
+
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-12">`
+            <div class="row mt-3 text-center">
+              <h1 class="text-white text-center">GET IN TOUCH</h1>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- Your-Name -->
+                <input id="name" type="text" autocomplete="off" name="input" class="input" placeholder="Your Name">
+                <!-- Your-Name -->
+
+                <!-- Your-Email -->
+                <input id="email" type="text" name="email" class="input" placeholder="Your Email" required>
+                <!-- Your-Email -->
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- Phone-Number -->
+                <input id="phone" type="text" name="number" class="input" placeholder="Phone Number" required>
+                <!-- Phone-Number -->
+
+                <!-- Subject -->
+                 <input id="subject" type="text" name="subject" class="input" placeholder="Subject" required>
+                <!-- Subject -->
+              </div>
+            </div>
+            <!-- Message -->
+              <input id="message" type="text" name="message" class="nput" placeholder="Message" required>
+            <!-- Message -->
+             <!-- Submet-Btn -->
+               <button type="button" name="submit" id="submit" class="btn btn-outline-danger text-danger submit-btn" onclick="sendEmail()" >Submit</button>
+             <!-- Submit-btn -->
+              <script src="form.js"></script>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+
+
+ </footer>
+
+
+  <!-- script-js-files -->
+ <script src="index.js"></script>
+<!-- script-js-files -->
+
+
+<!-- CDNS-JS -->
+
+<!-- Fade_aos-Js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+<!-- Fade_aos-Js -->
+
+<!-- Bootstrap-jS-cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+ <!-- Bootstrap-jS-cdn -->
+<!-- CDNS-JS -->
+
+</body>
+</html>

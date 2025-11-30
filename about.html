@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDNS -->
+     <!-- Bootstrap-css-cdn -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!-- Bootstrap-css-cdn -->
+     <!-- Font-Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Font-awesome -->
+     <!-- Fade_aos-css -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Fade_aos-css -->
+    <!-- ✔ Guaranteed Working Bootstrap Icons CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- CDNS -->
+    <!-- CSS-LINKS -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="service.css">
+      <link rel="stylesheet" href="resume.css">
+      <link rel="stylesheet" href="pricing.css">
+      <link rel="stylesheet" href="contacts.css">
+      <link rel="stylesheet" href="footer.css">
+    <!-- CSS-LINKS -->
+    <!-- Email.Js-CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "cA8u22D9--APh9-2h",
+      });
+   })();
+</script>
+    <!-- Email.Js.CDN -->
+    <!-- CDNS -->
+    <title>About</title>
+
+    <style>
+      /* ABOUT-PAGE */
+.about-page-container{
+  width: 100%;
+  height: auto;
+  border: 1px solid none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+#about-nav{
+  width: 160px;
+}
+#about-nav-ol{
+  background-color: black;
+}
+#about-nav-li-home{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: gray;
+}
+#about-nav-li-about{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+  .service-card {
+    background: #0d0d0d;
+    border-radius: 20px;
+    padding: 50px 20px;
+    transition: .3s ease;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+  }
+
+  .service-icon {
+    font-size: 55px;
+    color: #ff0055;
+    margin-bottom: 20px;
+  }
+
+  .service-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .service-count {
+    color: #ccc;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  @media(max-width: 767px) {
+    .service-card {
+      padding: 40px 20px;
+    }
+  }
+
+
+  /* Skills-Section */
+    .skill-title{
+    font-size:2rem;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:30px;
+}
+.skill-title span{
+    color:#ff004f;
+}
+.skill-box{
+    margin-bottom:25px;
+}
+.skill-name{
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    margin-bottom:5px;
+}
+.skill-bar{
+    width:100%;
+    height:8px; /* slightly smaller height */
+    background:#232323;
+    border-radius:30px;
+    position:relative;
+    overflow:hidden;
+}
+.skill-per{
+    height:100%;
+    background:#ff004f;
+    border-radius:30px;
+    width:0;
+    transition: width 2s ease-in-out;
+}
+.container{
+    padding:40px 15px;
+}
+
+/* Responsive adjustments */
+@media(max-width:1200px){
+    .skill-title{font-size:1.8rem;}
+    .skill-name{font-size:0.95rem;}
+}
+@media(max-width:992px){
+    .skill-title{font-size:1.7rem;}
+    .skill-name{font-size:0.9rem;}
+}
+@media(max-width:768px){
+    .skill-title{font-size:1.6rem;}
+    .skill-name{font-size:0.85rem;}
+}
+@media(max-width:576px){
+    .skill-title{font-size:1.5rem;}
+    .skill-name{font-size:0.8rem;}
+}
+  /* Skills-Section */
+
+/* Completation-cards */
+  .stats-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Desktop = 2 columns */
+    gap: 20px;
+}
+
+.stat-card {
+    background: #111;
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stat-text {
+  font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+/* Tablet — 2 columns SAME as desktop */
+@media (max-width: 992px) {
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile — 1 column */
+@media (max-width: 576px) {
+    .stats-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+}
+
+/* Completation-cards */
+
+/* Experience-laptop-img */
+ .about-page-experience-2{
+  width: 90%;
+  height: 500px;
+  border: 1px solid none;
+  border-radius: 20px;
+  margin: auto;
+ }
+/* Experience-laptop-img */
+
+.basic-plane-card{
+    width: 90%;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 12px;
+}
+.standard-plane-card{
+    width: 90%;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 12px;
+}
+.premium-plane-card{
+    width: 90%;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 12px;
+}
+#website-development-resize{
+    font-size: 18px;
+    margin-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#red-tick{
+    width: 15px;
+    height: 15px;
+}
+#whats-included-font{
+    font-size: 14px;
+}
+#continue{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    border: 1px solid red;
+    background-color: rgb(83, 7, 7);
+    /* margin-left: 50px; */
+    position: relative;
+    top: 15px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#continue:hover{
+    transition: all 0.1s;
+    border: 1px solid red;
+    background-color: rgb(43, 2, 2);
+}
+
+/* Email-Send-section */
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#footer-child-parent{
+    width: 97%;
+    height: auto;
+    margin: auto;
+    border: 2px solid rgb(77, 2, 2);
+    border-radius: 12px;
+    margin-left: -5px;
+}
+
+#footer-child-parent:hover {
+    transition: all 1s;
+    transform: scale(1.05); 
+    border-color: darkred;
+    border: 3px solid; 
+    background-color: rgb(15, 15, 15); 
+}
+
+.footer-icons-div{
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 10px;
+    animation: 4s footer-icon-ring linear infinite alternate;
+}
+@keyframes footer-icon-ring {
+    0%{
+       border: 2px solid red; 
+    }
+    30%{
+        border: 2px solid black;
+    }
+    70%{
+        border: 2px solid red;
+    }
+    100%{
+        border: 2px solid black;
+    }
+}
+
+/* Email-Section */
+
+.footer-icons-div{
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 10px;
+    animation: 4s footer-icon-ring linear infinite alternate;
+}
+@keyframes footer-icon-ring {
+    0%{
+       border: 2px solid red; 
+    }
+    30%{
+        border: 2px solid black;
+    }
+    70%{
+        border: 2px solid red;
+    }
+    100%{
+        border: 2px solid black;
+    }
+}
+
+/* #Footer-inputs{
+    width: 230px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(58, 56, 56);
+    border-radius: 6px;color: white;
+    background-color: black;
+} */
+
+/* From Uiverse.io by Praashoo7 */ 
+.input {
+  width: 226px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 1em;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: black;
+  box-shadow: inset 2px 5px 10px rgb(63, 61, 61);
+  transition: 300ms ease-in-out;
+}
+
+.input:focus {
+  color: gray   ;
+  background-color: black;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,-13px -13px 100px #ffffff;
+}
+
+/* Base style */
+.input {
+  width: 100%;          /* Parent container ke width ke hisaab se adjust */
+  max-width: 490px;     /* Desktop ke liye maximum width */
+  height: 40px;         /* Desktop height */
+  border: none;
+  outline: none;
+  padding: 1em;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  box-shadow: inset 2px 5px 10px rgb(63, 61, 61);
+  transition: 300ms ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Large screens (≤1240px) */
+@media screen and (max-width: 1240px) {
+  .input {
+    max-width: 400px;
+    height: 35px;
+  }
+}
+
+/* Medium screens (≤992px) */
+@media screen and (max-width: 992px) {
+  .input {
+    max-width: 350px;
+    height: 35px;
+  }
+}
+
+/* Small screens (≤768px) */
+@media screen and (max-width: 768px) {
+  .input {
+    max-width: 300px;
+    height: 30px;
+    padding: 0.8em;
+  }
+}
+
+/* Extra small screens (≤576px) */
+@media screen and (max-width: 576px) {
+  .input {
+    width: 100%;        /* Full width on mobile */
+    height: 28px;
+    padding: 0.7em;
+    font-size: 14px;
+  }
+}
+
+
+#Messsage{
+  width: 470px;
+  height: 130px;
+  border: none;
+  outline: none;
+  padding: 1em;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: black;
+  box-shadow: inset 2px 5px 10px rgb(63, 61, 61);
+  transition: 300ms ease-in-out;  
+}
+
+
+@media screen and (max-width: 1199px) {
+  .input {
+  width: 190px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 1em;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: black;
+  box-shadow: inset 2px 5px 10px rgb(63, 61, 61);
+  transition: 300ms ease-in-out;
+}
+}
+
+
+#message {
+  width: 490px;
+  height: 130px;
+  border: none;
+  outline: none;
+  padding: 1em;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  box-shadow: inset 2px 5px 10px rgb(63, 61, 61);
+  transition: 300ms ease-in-out;
+}
+
+/* Large screens (max-width: 1199px) */
+@media screen and (max-width: 1199px) {
+  #message {
+    width: 390px;
+  }
+}
+
+/* Medium screens (max-width: 991px) */
+@media screen and (max-width: 991px) {
+  #message {
+    width: 330px;
+  }
+}
+
+/* Small screens (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  #message {
+    width: 100%;
+    height: 120px;
+  }
+}
+
+/* Extra small screens (max-width: 575px) */
+@media screen and (max-width: 575px) {
+  #message {
+    width: 100%;
+    height: 110px;
+    font-size: 14px;
+    padding: 0.8em;
+  }
+}
+
+#Message:focus {
+  color: gray   ;
+  background-color: black;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,-13px -13px 100px #ffffff;
+}
+/* submit-btn */
+  .submit-btn{
+    height: 38px;
+    border: 1px solid;
+    border-radius: 40px;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+/* submit-btn */
+
+#your-vision{
+  font-size: 56px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Email-Section-End */
+#footer-email-icon-parent{
+  width: 41px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 50%;
+  animation: 3s footer-icon-ring linear infinite alternate;
+}
+@keyframes footer-icon-ring{
+  from{
+    transition: all 2s;
+    border: 2px solid;
+    border-color: red;
+  }
+  to{
+    transition: all 2s;
+    border: 1px solid;
+    border-color: black;
+  }
+}
+
+#footer-email-icon{
+  font-size: 21px;
+}
+.footer-email-content{
+  font-size: 16px;
+  color: rgb(114, 104, 104);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#smart-email-link{
+  font-size: 14px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: -10px;
+}
+/* Email-Section-End */
+
+/* Email-Section-End */
+#footer-Location-icon-parent{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+  animation: 3s footer-icon-ring linear infinite alternate;
+}
+@keyframes footer-icon-ring{
+  from{
+    transition: all 2s;
+    border: 2px solid;
+  }
+  to{
+    transition: all 2s;
+    border: 1px solid;
+    border-color: red;
+  }
+}
+
+#footer-Location-icon{
+  font-size: 21px;
+}
+.footer-Location-content{
+  font-size: 16px;
+  color: rgb(114, 104, 104);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#smart-Location-link{
+  font-size: 14px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: -10px;
+}
+/* Location-Section-End */
+
+/* Phone-Section-End */
+#footer-Phone-icon-parent{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+  animation: 3s footer-icon-ring linear infinite alternate;
+}
+@keyframes footer-icon-ring{
+  from{
+    transition: all 2s;
+    border: 2px solid;
+  }
+  to{
+    transition: all 2s;
+    border: 1px solid;
+    border-color: red;
+  }
+}
+
+#footer-Phone-icon{
+  font-size: 17px;
+}
+.footer-Phone-content{
+  font-size: 16px;
+  color: rgb(114, 104, 104);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#smart-Phone-link{
+  font-size: 14px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: -10px;
+}
+/* Phone-Section-End */
+/* Email-Send-Section */
+
+/* ABOUT-PAGE */
+    </style>
+
+</head>
+<body>
+    
+<section>
+    <!-- Container-Section -->
+     <!-- Navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg" id="navbar">
+  <a class="navbar-brand" href="index.html">
+    <img id="my-logo" src="my-logo-usman-dev.jpeg" alt="" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <!-- Toggle -->
+<label class="hamburger" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+  <input type="checkbox" />
+  <svg viewBox="0 0 32 32">
+    <path
+      d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+      class="line line-top-bottom"
+    ></path>
+    <path d="M7 16 27 16" class="line"></path>
+  </svg>
+</label>
+
+      <!-- Toggle -->
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-danger" style="background-color: rgba(198, 66, 66, 0.217); border-radius: 4px; height: 40px;" id="a-tag-line" href="index.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="about.html" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="service.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="#" data-aos="fade-dowm" data-aos-easing="linear" data-aos-duration="800">Resume</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="#" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Projects</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="#" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Contact</a>
+      </li>
+    </ul>
+    <div class="d-flex">  
+      <!-- Navbar-Icons -->
+     <!-- linkedin-icon -->
+       <button id="nav-icons" class="mr-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://www.linkedin.com/in/m-usman-chauhan/')">
+       <i class="fa-brands fa-linkedin-in" id="linkedin-icon"></i>
+       </button>
+
+        <!-- linkedin-icon -->
+        <!-- github-icon -->
+        <button id="nav-icons" class="mr-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://github.com/MUsmanandDeveloper19')">
+       <i class="fa-brands fa-github" id="github-icon"></i> 
+       </button>
+        <!-- github-icon -->
+        <!-- whatsapp-icon -->
+          <button id="nav-icons" class="mr-2"
+          data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+          onclick="window.open('https://wa.me/923061664480?text=Hello%20I%20saw%20your%20portfolio!', '_blank')">
+         <i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i>
+         </button>
+
+        <!-- whatsapp-icon -->
+        <!-- youtube-icon -->
+        <button id="nav-icons" class="mr-2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://www.upwork.com/freelancers/~01b28b7c8bcfa1d2cb')">
+          <i class="fa-brands fa-upwork" id="youtube-icon"></i>
+        </button>
+        
+      <!-- youtube-icon -->
+      <!-- Navbar-icons -->
+    </div>
+  </div>
+</nav>
+</section>
+<!-- Navbar -->
+
+<!-- Container-Section -->
+<section id="About">
+  <div class="about-page-container">
+    <h1 class="text-white text-center">About Me</h1>
+
+    <!-- about-nav -->
+      <nav aria-label="breadcrumb" id="about-nav" class="mx-auto mt-3">
+       <ol class="breadcrumb" id="about-nav-ol">
+       <li class="breadcrumb-item"><a href="index.html" id="about-nav-li-home">Home</a></li>
+       <li class="breadcrumb-item"> <a href="about.html" id="about-nav-li-about">About</a></li>
+       </ol>
+      </nav>
+    <!-- about-nav -->
+
+  </div>
+<!-- Container-Section -->
+
+
+  <div class="container mt-5">
+    
+    <div class="container py-5">
+  <div class="row justify-content-center">
+
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex">
+      <div class="service-card w-100">
+        <i class="bi bi-layers service-icon"></i>
+        <h3 class="service-title">Frontend Development</h3>
+        <p class="service-count">180+ Projects</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex">
+      <div class="service-card w-100">
+        <i class="bi bi-braces service-icon"></i>
+        <h3 class="service-title">MERN Stack Development</h3>
+        <p class="service-count">120+ Projects</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex">
+      <div class="service-card w-100">
+        <i class="bi bi-terminal service-icon"></i>
+        <h3 class="service-title">API & Backend</h3>
+        <p class="service-count">90+ APIs</p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex">
+      <div class="service-card w-100">
+        <i class="bi bi-bezier service-icon"></i>
+        <h3 class="service-title">UI Engineering</h3>
+        <p class="service-count">150+ UI Builds</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+</section>
+
+<section id="Skills">
+
+  <div class="container">
+  
+  <div class="container">
+
+  <!-- FRONTEND SKILLS -->
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="skill-title"><span>Frontend</span> Skills</h2>
+
+      <div class="skill-box">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="95%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">CSS / SCSS</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="80%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">Bootstrap</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="95%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">Tailwind CSS</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="90%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">JavaScript (ES6+)</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="75%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">React.js</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="70%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">Redux / Zustand</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="80%"></div></div>
+      </div>
+    </div>
+    <!-- FRONTEND SKILLS -->
+
+    <!-- MERN BACKEND SKILLS -->
+    <div class="col-md-6">
+      <h2 class="skill-title"><span>MERN</span> Backend Skills</h2>
+
+      <div class="skill-box">
+        <div class="skill-name">Node.js</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="90%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">Express.js</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="80%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">MongoDB</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="86%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">Mongoose</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="78%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">REST API</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="90%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">JWT Authentication</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="75%"></div></div>
+      </div>
+    </div>
+  </div>
+  <!-- MERN BACKEND SKILLS -->
+
+  <!-- DEPLOYMENT -->
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h2 class="skill-title"><span>Deployment</span> Skills</h2>
+
+      <div class="skill-box">
+        <div class="skill-name">Git & GitHub</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="95%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">Vercel</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="90%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">Netlify</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="85%"></div></div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-name">Render / Railway</div>
+        <div class="skill-bar"><div class="skill-per" data-percentage="80%"></div></div>
+      </div>
+    </div>
+  </div>
+  <!-- Deployment -->
+
+</div>
+
+  </div>
+
+  <!-- Skills-Js -->
+    <script>
+  // Animate skill bars with staggered effect
+  window.addEventListener('load', () => {
+    const skills = document.querySelectorAll('.skill-per');
+    skills.forEach((skill, index) => {
+      const percentage = skill.getAttribute('data-percentage');
+      setTimeout(() => {
+        skill.style.width = percentage;
+      }, index * 200); // stagger each bar by 200ms
+    });
+  });
+</script>
+  <!-- Skills-Js -->
+</section>
+
+
+<section id="Experience">
+ <!-- Experience -->
+  <div class="container mt-5">
+    <div class="row d-flex">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <img  class="img-fluid rounded-5" src="03-years-of-experience.png" alt="">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="stats-container">
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-text">Completed Projects</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="30">0</div>
+        <div class="stat-text">Satisfied Clients</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-text">Years Experience</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="10">0</div>
+        <div class="stat-text">MERN Applications</div>
+    </div>
+
+</div>
+
+<!-- Completetation-cards-js -->
+  <script>
+    // NUMBER COUNT ANIMATION
+    const counters = document.querySelectorAll(".stat-number");
+
+    const startCount = (entry) => {
+        const target = +entry.target.getAttribute("data-target");
+        let count = 0;
+        const speed = 40; // animation speed
+
+        const updateCount = () => {
+            if (count < target) {
+                count++;
+                entry.target.textContent = count;
+                requestAnimationFrame(updateCount);
+            } else {
+                entry.target.textContent = target + "+";
+            }
+        };
+
+        updateCount();
+    };
+
+    // IntersectionObserver for start when visible
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && !entry.target.classList.contains("counted")) {
+                    entry.target.classList.add("counted");
+                    startCount(entry);
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    counters.forEach((counter) => observer.observe(counter));
+</script>
+<!-- Completetation-cards-js -->
+
+      </div>
+    </div>
+  </div>
+ <!-- Experience -->
+</section>
+
+<section>
+  <!-- Experience-section -->
+    <div class="container mt-5">
+      <h2 class="skill-title"><span>Experience</span></h2>
+      <div class="row d-flex mt-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+          <img class="about-page-experience-2" src="about-page-experience-2.png" alt="">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="container" style="margin-top: -50px;">
+          <!-- Experience-1 -->
+            <div class="frontend-developer-experine">
+              <h6 style="color: red;">experience</h6>
+              <h4 class="text-white mt-1" style="font-weight: bold;">Linkedin</h4>
+              <h6 class="text-white mt-3" style="font-family: Arial, Helvetica, sans-serif;">Frontend Development</h6>
+              <p class="text-white mt-3" style="font-family: Arial, Helvetica, sans-serif;">Created responsive e-commerce and agency websites <br> for real clients on Fiverr, LinkedIn, and Upwork <br> using modern frontend technologies.</p>
+            </div>
+          <!-- Experience-1 -->
+
+          <!-- Experience-2 -->
+            <div class="frontend-developer-experine">
+              <h6 style="color: red;">experience</h6>
+              <h4 class="text-white mt-1" style="font-weight: bold;">Upwork</h4>
+              <h6 class="text-white mt-3" style="font-family: Arial, Helvetica, sans-serif;">MERN Stack Development:</h6>
+              <p class="text-white mt-3" style="font-family: Arial, Helvetica, sans-serif;">Built full-stack e-commerce and agency platforms with MongoDB, Express, React, and Node.js for real-world freelancing projects.</p>
+            </div>
+          <!-- Experience-2 -->
+
+          <!-- Experience-3 -->
+            <div class="frontend-developer-experine">
+              <h6 style="color: red;">experience</h6>
+              <h4 class="text-white mt-1" style="font-weight: bold;">Fiverr</h4>
+              <h6 class="text-white mt-3" style="font-family: Arial, Helvetica, sans-serif;">MERN Stack Development:</h6>
+              <p class="text-white mt-3" style="font-family: Arial, Helvetica, sans-serif;">Built full-stack e-commerce and agency platforms with MongoDB, Express, React, and Node.js for real-world freelancing projects.</p>
+            </div>
+          <!-- Experience-3 -->
+        </div>
+        </div>
+      </div>
+    </div>
+  <!-- Experience-section -->
+</section>
+<section>
+</section>
+
+
+<section id="Pricing">
+  <div class="container mt-5">
+    <div class="d-flex mt-5">
+    <h3 class="resume-section-tittle" data-aos="fade-down"
+     data-aos-duration="3000">Pricing</h3>
+    <div class="mt-3 ml-3">
+      <div class="edu-routate-div-first"></div>
+      <div class="edu-line-div" data-aos="fade-up"
+     data-aos-duration="3000"></div>
+      <div class="edu-routate-div-last"></div>
+    </div>
+   </div>
+   <div class="row mt-5">
+    <!-- Basic-Plane-card -->
+     <div class="col-lg-4 col-md-4 col-sm-12 text-white mt-5">
+        <div class="basic-plane-card" data-aos="fade-up"
+     data-aos-duration="3000">
+          <div class="container">
+            <!-- Basic-plane-contant -->
+             <h3 class="text-danger mt-2" data-aos="fade-right"
+     data-aos-duration="3000">Basic</h3>
+              <div class="d-flex">
+              <h6 class="text-white" id="website-development-resize" data-aos="fade-right"
+     data-aos-duration="3000">WEB DEVELOPMENT</h6>
+              <h5 class="text-danger pl-3" style="font-family: Arial, Helvetica, sans-serif;" data-aos="fade-left"
+     data-aos-duration="3000">US$100</h5>
+              </div>
+              <h6 class="text-white" style="font-family: Arial, Helvetica, sans-serif;" data-aos="fade-down"
+     data-aos-duration="3000">(BASIC)</h6>
+              <p class="text-white" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;" data-aos="fade-up"
+     data-aos-duration="3000">Three-Page Website Development or Dashboard + Responsive + Basic Functionality</p>
+              <div class="d-flex">
+                <img class="mt-1" src="clock-icon.png" alt="" style="width: 16px; height: 16px;" data-aos="fade-right"
+     data-aos-duration="3000">
+                <p class="text-white ml-2" id="whats-included-font" data-aos="fade-left"
+     data-aos-duration="3000">3-day delivery</p>
+              </div>
+              <!-- What's Included -->
+              <b class="text-danger" data-aos="fade-down"
+     data-aos-duration="3000">What's Included</b>
+              <!-- What's Included -->
+                <!-- Functional-website -->
+                <div class="d-flex mt-2">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Functional website</h6>
+                </div>
+                <!-- Functional-website -->
+                <!-- 3-Pages -->
+                <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">3 Pages</h6>
+                </div>
+                <!-- 3-Pages -->
+                <!-- Content-upload -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Content Upload</h6>
+                </div>
+                <!-- Content-upload -->
+                <!-- E-commerce-functionality -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">E Commerce Functional</h6>
+                </div>
+                <!-- E-commerce-functionality -->
+                <!-- Payment-Integration -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">Payment Integration</h6>
+                </div>
+                <!-- Payment-Integration -->
+                <!-- Opt-in-form -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Opt in Form</h6>
+                </div>
+                <!-- Opt-in-form -->
+                <!-- Speed-optimization -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">Speed Optimization</h6>
+                </div>
+                <!-- Speed-optimization -->
+                <!-- Hosting-setup -->
+                <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Hosting Setup</h6>
+                </div>
+                <!-- Hosting-setup -->
+                <!-- Social-media-icons -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">Social Media Icons</h6>
+                </div>
+                <!-- Social-media-icons -->
+              <!-- What's Included -->
+            <!-- Basic-plane-contant -->
+            </div>
+            <!-- Pricing-continue-button -->
+             <button id="continue" data-aos="fade-down"
+     data-aos-duration="3000">Continue ></button>
+            <!-- Pricing-continue-button -->
+            </div>
+    </div>
+
+    <!-- Basic-plane-card -->
+    <!-- Standard-plane-card -->
+    <div class="col-lg-4 col-md-4 col-sm-12 text-info mt-5">
+        <div class="standard-plane-card" data-aos="fade-down"
+     data-aos-duration="3000">
+          <div class="container">
+             <h3 class="text-danger mt-1" data-aos="fade-up"
+     data-aos-duration="3000">Standard</h3>
+              <div class="d-flex">
+              <h6 class="text-white" id="website-development-resize" data-aos="fade-left"
+     data-aos-duration="3000">WEB DEVELOPMENT</h6>
+              <h5 class="text-danger pl-3" style="font-family: Arial, Helvetica, sans-serif;" data-aos="fade-right"
+     data-aos-duration="3000">US$250</h5>
+              </div>
+              <h6 class="text-white" style="font-family: Arial, Helvetica, sans-serif;">(STANDARD)</h6>
+              <p class="text-white" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;" data-aos="fade-down"
+     data-aos-duration="3000">Customized Mid-Level Website Development Upto 8 Pages Design + Converted from Figma + Responsive</p>
+              <div class="d-flex">
+                <img class="mt-1" src="clock-icon.png" alt="" style="width: 16px; height: 16px;" data-aos="fade-left"
+     data-aos-duration="3000">
+                <p class="text-white ml-2" id="whats-included-font" data-aos="fade-right"
+     data-aos-duration="3000">10-day delivery</p>
+              </div>
+              <!-- What's Included -->
+               <b class="text-danger" data-aos="fade-up"
+     data-aos-duration="3000">What's Included</b>
+              <!-- What's Included -->          
+                <!-- Functional-website -->
+                <div class="d-flex mt-2">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">Functional website</h6>
+                </div>
+                <!-- Functional-website -->
+                <!-- 8-Pages -->
+                <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">8 Pages</h6>
+                </div>
+                <!-- 8-Pages -->
+                <!-- Content-upload -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-dowm"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font">Content Upload</h6>
+                </div>
+                <!-- Content-upload -->
+                <!-- E-commerce-functionality -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">E Commerce Functional</h6>
+                </div>
+                <!-- E-commerce-functionality -->
+                <!-- Payment-Integration -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Payment Integration</h6>
+                </div>
+                <!-- Payment-Integration -->
+                <!-- Opt-in-form -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">Opt in Form</h6>
+                </div>
+                <!-- Opt-in-form -->
+                <!-- Speed-optimization -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Speed Optimization</h6>
+                </div>
+                <!-- Speed-optimization -->
+                <!-- Hosting-setup -->
+                <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">Hosting Setup</h6>
+                </div>
+                <!-- Hosting-setup -->
+                <!-- Social-media-icons -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Social Media Icons</h6>
+                </div>
+                <!-- Social-media-icons -->                
+                 </div>
+            <!-- Pricing-continue-button -->
+             <button id="continue" data-aos="fade-down"
+     data-aos-duration="3000">Continue ></button>
+            <!-- Pricing-continue-button -->
+        </div>
+    </div>
+    <!-- Standard-plane-card -->
+    <!-- Premium-plane-card -->
+     <div class="col-lg-4 col-md-4 col-sm-12 text-danger mt-5">
+        <div class="premium-plane-card" data-aos="fade-up"
+     data-aos-duration="3000">
+          <div class="container">
+             <h3 class="text-danger mt-1" data-aos="fade-left"
+     data-aos-duration="3000">Premium</h3>
+              <div class="d-flex">
+              <h6 class="text-white" id="website-development-resize" data-aos="fade-right"
+     data-aos-duration="3000">WEB DEVELOPMENT</h6>
+              <h5 class="text-danger pl-3" style="font-family: Arial, Helvetica, sans-serif;" data-aos="fade-left"
+     data-aos-duration="3000">US$550</h5>
+              </div>
+              <h6 class="text-white" style="font-family: Arial, Helvetica, sans-serif;" data-aos="fade-up"
+     data-aos-duration="3000">(PREMIUM)</h6>
+              <p class="text-white" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;" data-aos="fade-down"
+     data-aos-duration="3000">Fully Customized Website Development Upto 10 Pages in a Large Scale + Fully Functional</p>
+              <div class="d-flex">
+                <img class="mt-1" src="clock-icon.png" alt="" style="width: 16px; height: 16px;" data-aos="fade-right"
+     data-aos-duration="3000">
+                <p class="text-white ml-2" id="whats-included-font" data-aos="fade-left"
+     data-aos-duration="3000">14-day delivery</p>
+              </div>
+              <!-- What's Included -->
+               <b class="text-danger" data-aos="fade-up"
+     data-aos-duration="3000">What's Included</b>
+              <!-- What's Included -->          
+                <!-- Functional-website -->
+                <div class="d-flex mt-2">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Functional website</h6>
+                </div>
+                <!-- Functional-website -->
+                <!-- 10-Pages -->
+                <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">10 Pages</h6>
+                </div>
+                <!-- 10-Pages -->
+                <!-- Content-upload -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Content Upload</h6>
+                </div>
+                <!-- Content-upload -->
+                <!-- E-commerce-functionality -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">E Commerce Functional</h6>
+                </div>
+                <!-- E-commerce-functionality -->
+                <!-- Payment-Integration -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Payment Integration</h6>
+                </div>
+                <!-- Payment-Integration -->
+                <!-- Opt-in-form -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">Opt in Form</h6>
+                </div>
+                <!-- Opt-in-form -->
+                <!-- Speed-optimization -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Speed Optimization</h6>
+                </div>
+                <!-- Speed-optimization -->
+                <!-- Hosting-setup -->
+                <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-down"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-up"
+     data-aos-duration="3000">Hosting Setup</h6>
+                </div>
+                <!-- Hosting-setup -->
+                <!-- Social-media-icons -->
+                 <div class="d-flex">
+                  <img id="red-tick" src="red-tick.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+                  <h6 class="text-white ml-1" id="whats-included-font" data-aos="fade-down"
+     data-aos-duration="3000">Social Media Icons</h6>
+                </div>
+                <!-- Social-media-icons -->                
+                 </div>
+            <!-- Pricing-continue-button -->
+             <button id="continue" data-aos="fade-up"
+     data-aos-duration="3000">Continue ></button>
+            <!-- Pricing-continue-button -->
+          </div>
+        </div>
+     </div>
+     <!-- Premium-plane-card -->
+   </div>
+  </div>
+ </section>
+
+
+
+ <footer class="mt-5">
+  <div class="container mt-5">
+    <div class="row mt-3" id="footer-child-parent">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <h1 class="text-white" id="your-vision">Your Vision, My Code — Let’s Create Great .</h1>
+           <!-- Email-Icon -->
+             <section>
+               <div class="d-flex mt-5">
+              <div id="footer-email-icon-parent">
+                <i class="fa-solid fa-envelope text-white" id="footer-email-icon"></i>
+              </div>
+                <div class="footer-email-content ml-3">
+                  <h5 class="footer-email-content">Email:</h5>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                  <a id="smart-email-link" href="#" role="button" style="text-decoration: none;" class="text-white">musmanchauhan191@gmail.com</a>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                </div>
+            </div>
+             </section>
+           <!-- Email-icon -->
+           <!-- Location-icon -->
+            <section>
+               <div class="d-flex mt-3">
+              <div id="footer-Location-icon-parent">
+                <i class="fa-solid fa-location-dot text-white" id="footer-Location-icon"></i>
+              </div>
+                <div class="footer-Location-content ml-3">
+                  <h5 class="footer-Location-content">Email:</h5>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                  <a id="smart-Location-link" href="#" role="button" style="text-decoration: none;" class="text-white">Lahore, Pakistan</a>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                </div>
+            </div>
+             </section>
+           <!-- Location-icon -->
+
+           <!-- Phone-icon -->
+            <section>
+               <div class="d-flex mt-3">
+              <div id="footer-Phone-icon-parent">
+                <i class="fa-solid fa-phone text-white" id="footer-Phone-icon"></i>
+              </div>
+                <div class="footer-Phone-content ml-3">
+                  <h5 class="footer-Phone-content">Contact:</h5>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                  <a id="smart-Phone-link" href="#" role="button" style="text-decoration: none;" class="text-white">+92 306 1664480</a>
+                  <!-- HTML: place anywhere in footer/contact section -->
+                </div>
+            </div>
+             </section>
+           <!-- Phone-icon -->
+
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-12">`
+            <div class="row mt-3 text-center">
+              <h1 class="text-white text-center">GET IN TOUCH</h1>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- Your-Name -->
+                <input id="name" type="text" autocomplete="off" name="input" class="input" placeholder="Your Name">
+                <!-- Your-Name -->
+
+                <!-- Your-Email -->
+                <input id="email" type="text" name="email" class="input" placeholder="Your Email" required>
+                <!-- Your-Email -->
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- Phone-Number -->
+                <input id="phone" type="text" name="number" class="input" placeholder="Phone Number" required>
+                <!-- Phone-Number -->
+
+                <!-- Subject -->
+                 <input id="subject" type="text" name="subject" class="input" placeholder="Subject" required>
+                <!-- Subject -->
+              </div>
+            </div>
+            <!-- Message -->
+              <input id="message" type="text" name="message" class="nput" placeholder="Message" required>
+            <!-- Message -->
+             <!-- Submet-Btn -->
+               <button type="button" name="submit" id="submit" class="btn btn-outline-danger text-danger submit-btn" onclick="sendEmail()" >Submit</button>
+             <!-- Submit-btn -->
+              <script src="form.js"></script>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+
+
+ </footer>
+
+
+  <!-- script-js-files -->
+ <script src="index.js"></script>
+<!-- script-js-files -->
+
+
+<!-- CDNS-JS -->
+
+<!-- Fade_aos-Js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+<!-- Fade_aos-Js -->
+
+<!-- Bootstrap-jS-cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+ <!-- Bootstrap-jS-cdn -->
+<!-- CDNS-JS -->
+
+</body>
+</html>
